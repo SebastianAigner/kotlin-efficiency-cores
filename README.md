@@ -11,9 +11,11 @@ Constrain JVM threads and coroutines to the efficiency cores available on M-seri
 _tbd -- so far, this repo contains my implementations that haven't been packaged up into a nice library yet._
 
 - If you're using Java 22, you can copy-paste the `FFMQosSetter.kt` and `QosSetter.kt` files into your project. Start your program with the `--enable-native-access=ALL-UNNAMED` VM argument.
-- If you're targeting pre-Java 22, copy-paste the `JNAQosSetter.kt` and `QosSetter.kt` files into your project.
+- If you're targeting pre-Java 22, copy-paste the `JNAQosSetter.kt` and `QosSetter.kt` files into your project, and add `implementation("net.java.dev.jna:jna:5.14.0")` to your build file.
 
-Call `setQosClass(QosClass.QOS_CLASS_BACKGROUND)` to change the current thread's QoS class.
+Call `QosSetter.setQosClass(QosClass.QOS_CLASS_BACKGROUND)` to change the current thread's QoS class.
+
+Refer to the [Mac Apps documentation](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/PrioritizeWorkAtTheTaskLevel.html#//apple_ref/doc/uid/TP40013929-CH35-SW5) for a detailed overview of available QoS classes.
 
 ## How?
 
