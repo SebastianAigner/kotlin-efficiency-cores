@@ -3,7 +3,7 @@ Constrain JVM threads and coroutines to the efficiency cores available on M-seri
 
 <p align="center">
 <img src="images/ecores.png">
-<i>All e-cores, no p-cores, thanks to the Background QoS on macOS! (Graphic via <a href="https://github.com/exelban/stats">Stats</a>)</i>
+<i>All <a href="https://developer.apple.com/news/?id=vk3m204o">e-cores, no p-cores</a>, thanks to the Background QoS on macOS! (Graphic via <a href="https://github.com/exelban/stats">Stats</a>)</i>
 </p>
 
 ## Usage
