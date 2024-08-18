@@ -34,8 +34,8 @@ I originally prototyped this library using JNI ([see here](https://github.com/Se
 
 ## About the performance
 You're giving up a lot of performance (which is kind of the point). Running `ffmpeg` under background affinity, I observed the following:
-- Default QoS: `ffmpeg -i "skip-splash.mov" -vf hflip output.mp4  119.22s user 7.98s system 1056% cpu 12.039 total (speed=8.22x)`
-- Background QoS: `taskpolicy -c background ffmpeg -i "skip-splash.mov" -vf hflip output.mp4  476.48s user 21.29s system 282% cpu 2:55.99 total
+- Default QoS: `ffmpeg -i "splash.mov" -vf hflip output.mp4  119.22s user 7.98s system 1056% cpu 12.039 total (speed=8.22x)`
+- Background QoS: `taskpolicy -c background ffmpeg -i "splash.mov" -vf hflip output.mp4  476.48s user 21.29s system 282% cpu 2:55.99 total
 (speed=0.535x)`
 
 So on my M2 Max, switching to the background QoS was 16x slower. However, in the entire conversion process, the fans didn't come on at all. And that's what this is all about!
