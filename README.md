@@ -1,4 +1,4 @@
-# kotlin-efficiency-cores ⚡️
+# kotlin-efficiency-cores 🔋
 ![](https://img.shields.io/badge/stability-prototype-blue) ![](https://img.shields.io/badge/platform-jvm-red) ![](https://img.shields.io/badge/os-macOS-green)
 
 Constrain JVM threads and coroutines to the efficiency cores available on M-series Macs (as well as other supported QoS). Do heavy calculations in Kotlin code without the fans ever coming on! ❄
