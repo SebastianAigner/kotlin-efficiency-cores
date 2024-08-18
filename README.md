@@ -1,9 +1,9 @@
 # kotlin-efficiency-cores ⚡️
-_Constrain JVM threads and coroutines to the efficiency cores available on M-series Macs (as well as other supported QoS). Do heavy calculations in Kotlin code without the fans ever coming on! ❄_
+Constrain JVM threads and coroutines to the efficiency cores available on M-series Macs (as well as other supported QoS). Do heavy calculations in Kotlin code without the fans ever coming on! ❄
 
 <p align="center">
 <img src="images/ecores.png">
-All e-cores, no p-cores! (Graphic via [Stats](https://github.com/exelban/stats))
+_All e-cores, no p-cores, thanks to the Background QoS on macOS! (Graphic via [Stats](https://github.com/exelban/stats))_
 </p>
 
 ## Usage
