@@ -1,3 +1,6 @@
+/***
+ * Refer to the [Energy Efficiency Guide for Mac Apps](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/PrioritizeWorkAtTheTaskLevel.html#//apple_ref/doc/uid/TP40013929-CH35-SW5)
+ */
 enum class QosClass(val raw: Int) {
     QOS_CLASS_USER_INTERACTIVE(0x21),
     QOS_CLASS_USER_INITIATED(0x19),
